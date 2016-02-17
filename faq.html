@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en" xml:lang="en">
+	<head>
+		<title>Cart Module</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<script src="https://code.jquery.com/jquery-1.12.0.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				// Level 1
+        $('.faq-category h2').click(function(){
+            $(this).next().toggle(200);
+            $(this).toggleClass('selected');
+        });
+        
+        // Level 2
+		$('.faq-section-header').click(function(){$(this).next().toggle(200)});
+        
+        // Level 3
+        $('.faq-question').click(function(){$(this).next().toggle(200)});
+			});
+		</script>
+
+		<style type="text/css">
+			.faq-content {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.faq-content img {
+	max-width: 100%;
+}
+
+.faq-category h2 {
+	color: #001f56;
+	line-height: 1.4;
+	font-weight: bold;
+	font-family: "Arial";
+	font-size: 16px;
+	margin: 0;
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+.faq-category h2:hover {
+	color: #234a8c;
+	text-decoration: none;
+}
+
+.faq-category h2.selected, .faq-category h2.selected:hover {
+	color: #d32e01;
+	text-decoration: none;
+}
+
+.faq-category h2.selected {
+	color: #d32e01;
+	text-decoration: none;
+}
+
+.faq-category {
+	overflow:hidden;
+	width:100%;
+	padding-bottom: 20px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.faq-category-wrapper {
+	display:none;
+	padding-top:10px;
+}
+
+.faq-section {
+	border-radius: 5px;
+	width:100%;
+	position:relative;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+	
+}
+
+.faq-section-header {
+	cursor: pointer;
+	padding: 17px 15px;
+	display:inline-block;
+	width: 100%;
+	height: 48px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.faq-section-header h3 {
+	margin: 0;
+	font: 14px Arial,sans-serif;
+	color: #001f56;
+	font-weight: bold;
+	padding: 0;
+}
+
+.faq-section-header:hover {
+	background-color: #f8f8f8;
+}
+
+.faq-answer-wrapper {
+	padding: 0px 20px 20px 20px;
+}
+
+.faq-answer-list {
+	display:none;
+}
+
+.faq-answer-item {
+	margin-top: 10px;
+}
+
+.faq-answer-item > span {
+	display: block;
+}
+
+.faq-question {
+	font: 12px Arial,sans-serif;
+	color: #001f56;
+	font-weight: bold;
+	padding:10px 15px;
+	background-color: #f8f8f8;
+	border-radius: 17px;
+	cursor:pointer;
+}
+
+.faq-question:hover {
+	background-color: #eee;
+}
+.faq-section .faq-content {
+	display:none;
+}
+.faq-content {
+	font: 12px/18px Arial,sans-serif;
+	padding: 10px 20px 10px 20px;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="faq-container">
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>Membership & Balance</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Membership</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">What is the monthly membership subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is included in monthly membershp subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I subscribe?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I use 10 free chats with one lady?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Will I be notified when 3 free minutes run out?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I purchase credits without membership subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I subscribed with PayPal, how can I cancel subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Are 10 free chats rolled over to the next month if some are unused?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I cancel subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why do I only get the option to subscribe for $9.99?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I did not receive 20 credits this month</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Credits operations</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I check how many credits I have?</span>
+							<span class="faq-content">To check how many credits you have remaining in your account, please go into the Purchase credits section of My Account.<br><img src="http://media2.giphy.com/media/j50v9vd9rbhjG/giphy.gif"></span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much do Credits Cost?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Do credits ever expire?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I purchased a wrong amount of credits</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.<br><img src="https://sociorocketnewsen.files.wordpress.com/2014/12/ezgif-3646490184.gif?w=580&h=435"><br><img src="https://45.media.tumblr.com/10a3cd86558b54a14d8a638b037349b2/tumblr_mzkr47wV4x1qko8xvo1_500.gif"></span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I can’t see my credit balance</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I purchase credits without membership subscription?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Payment questions</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">Unable to accept my payment. Why?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is a payment of $9.99</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why I was charged  $15.99</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I pay using Western Union or via direct bank transfer?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I was charged too much</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>Services</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Call Me</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I place a Call? </span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Do you have a Phone Service Guide?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I want to call the lady on her Birthday and receive 5 bonus minutes, how can I do this?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">The lady suggested a new time but it does not suit me</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I can’t book a call </span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can the lady call me?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why did my call cost 70 credits?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">My lady does not need an interpreter</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>CamShare</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Camshare?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much does CamShare cost?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I start CamShare</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Free CamShare</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I start a Free CamShare session?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I switch the mode from CamShare to Live Chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can the lady invite me to CamShare</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Mobile Camshare</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Correspondance</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">I can't find  a letter</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I saw a message in my outbox that I did not send</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I opened a letter by mistake</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I deleted a letter by mistake</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I sent a blank letter</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I sent an unfinished letter</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Do I get charged for reading the same letter twice?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Live Chat</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Live Chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much does Live Chat cost?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I have more than one Live Chat at a time?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What do I need to play games on Live Chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much does it cost to play games in Live Chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I play and chat at the same time?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Are 10 free chats rolled over to the next month if some are unused?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why is the text blocked in Live Chat or letters?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">A lady’s video does not load</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I was overcharged for the chat with video</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What information can be exchanged via the Live Chat service?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Photo</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">I am having problems uploading photos</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What are private photos?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much does it cost to view private photos?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Gifts</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I send my personal contact information with my Virtual Gift message?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">A lady is asking for a gift…</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do Virtual Gifts work?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">A member sent me a Virtual Gift. Does this mean they sent me an e-mail?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">If a member sends me a Virtual Gift, does it stay on my profile for 7 days, like it stays on theirs?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How many flowers should I send?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>LoveNotes</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Love Note?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>Bonuses & Discount</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Bonuses & Discount</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">I have bonus minutes. How can I use them?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Free CamShare</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I purchased 1000 credits but did not get bonus minutes</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I received a 10% discount for my next order but can’t see it</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I apply 10% discount to my next order?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I use my bonus points for chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>Members Communication</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Communication Rules</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">Terms and Conditions</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Privacy Policy</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Anti-Scam Policy</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Member’s Verification</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I exchange personal contact information?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">A member is asking for money…</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Can I send my personal contact information with my Virtual Gift message?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why is the text blocked in Live Chat or letters?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I report fraud?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Members interaction</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">A Lady is refusing to provide contact information</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I know the members on AnastasiaDate are real people and how does AnastasiaDate vouch for them?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I can’t reach the lady after exchanging contact details</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I am contacted by ladies I am not interested in</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>Mobile App</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Mobile App</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I download the app? </span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What services are available through the app?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is Mobile Chat?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How does a member receive messages if they are offline?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Do all members have the Mobile Chat option?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How much does Mobile Chat cost?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is the name of the Iphone app?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">The app is not available in my country</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">App running slow</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+	<!-- CATEGORY -->
+	<div class="faq-category">
+		<h2>My profile & Settings</h2>
+		<div class="faq-category-wrapper">
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>My profile</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I change my account information (phone number, address, e-mail)?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">What is my account ID?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Where can I find my account ID?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I change my password?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How many photos can I add to my profile?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why can't the lady see me?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How can I make my profile invisible?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">When I try to register, it says that my e-mail address is already taken. What should I do?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">Why am I unable to log into my account?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- SECTION -->
+			<div class="faq-section">
+				<span class="faq-section-header"><h3>Notifications</h3></span>
+				<div class="faq-answer-list">
+					<div class="faq-answer-wrapper">
+						<div class="faq-answer-item">
+							<span class="faq-question">I am not receiving notifications to my e-mail address</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">How do I unsubscribe from notifications?</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I unsubscribed but still receive e-mails from you</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+						<div class="faq-answer-item">
+							<span class="faq-question">I am getting letters from the websites I did not register for</span>
+							<span class="faq-content">Please go to your settings and click on the pencil icon next to 'Your basic info', enter your correct date of birth and click 'Save' to confirm. Note that you can only change it once.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+	</body>
+</html>
