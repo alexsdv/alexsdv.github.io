@@ -1,1031 +1,691 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en" xml:lang="en">
 	<head>
-		<title>Cart Module</title>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		
+		<title>FAQ</title>
 		<script src="https://code.jquery.com/jquery-1.12.0.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			$(function() {
-				// Level 1
-        $('.faq-category h2').click(function(){
-            $(this).next().toggle(200);
-            $(this).toggleClass('selected');
-        });
-        
-        // Level 2
-		$('.faq-section-header').click(function(){$(this).next().toggle(200)});
-        
-        // Level 3
-        $('.faq-question').click(function(){$(this).next().toggle(200)});
-			});
-		</script>
-
-		<style type="text/css">
-			.faq-content {
-	width: 100%;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-		box-sizing: border-box;
-}
-
-.faq-content img {
-	max-width: 100%;
-}
-
-.faq-category h2 {
-	color: #001f56;
-	line-height: 1.4;
-	font-weight: bold;
-	font-family: "Arial";
-	font-size: 16px;
-	margin: 0;
-	cursor:pointer;
-	text-decoration: underline;
-}
-
-.faq-category h2:hover {
-	color: #234a8c;
-	text-decoration: none;
-}
-
-.faq-category h2.selected, .faq-category h2.selected:hover {
-	color: #d32e01;
-	text-decoration: none;
-}
-
-.faq-category h2.selected {
-	color: #d32e01;
-	text-decoration: none;
-}
-
-.faq-category {
-	overflow:hidden;
-	width:100%;
-	padding-bottom: 20px;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-		box-sizing: border-box;
-}
-
-.faq-category-wrapper {
-	display:none;
-	padding-top:10px;
-}
-
-.faq-section {
-	border-radius: 5px;
-	width:100%;
-	position:relative;
-	border: 1px solid #eee;
-	margin-bottom: 10px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-		box-sizing: border-box;
-
-	
-}
-
-.faq-section-header {
-	cursor: pointer;
-	padding: 17px 15px;
-	display:inline-block;
-	width: 100%;
-	height: 48px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-		box-sizing: border-box;
-}
-
-.faq-section-header h3 {
-	margin: 0;
-	font: 14px Arial,sans-serif;
-	color: #001f56;
-	font-weight: bold;
-	padding: 0;
-}
-
-.faq-section-header:hover {
-	background-color: #f8f8f8;
-}
-
-.faq-answer-wrapper {
-	padding: 0px 20px 20px 20px;
-}
-
-.faq-answer-list {
-	display:none;
-}
-
-.faq-answer-item {
-	margin-top: 10px;
-}
-
-.faq-answer-item > span {
-	display: block;
-}
-
-.faq-question {
-	font: 12px Arial,sans-serif;
-	color: #001f56;
-	font-weight: bold;
-	padding:10px 15px;
-	background-color: #f8f8f8;
-	border-radius: 17px;
-	cursor:pointer;
-}
-
-.faq-question:hover {
-	background-color: #eee;
-}
-.faq-section .faq-content {
-	display:none;
-}
-.faq-content {
-	font: 12px/18px Arial,sans-serif;
-	padding: 10px 20px 10px 20px; 
-}
-
-.faq-content p {
-	margin:0;
-	margin-bottom: 10px;
-}
-
-.faq-content ul {
-	list-style-type:none;
-	padding:0;
-	padding-left: 10px;
-}
-
-.faq-content li {
-	margin-bottom: 10px;
-}
-
-
-		</style>
+		<script src="faq.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="faq.css">
 	</head>
 	<body>
-		<div class="faq-container" style="width:680px; margin:0 auto; margin-top:50px;">
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>Membership & Balance</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Membership</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">What is the monthly membership subscription?</span>
-							<span class="faq-content">
-								<p>By subscribing to membership for the first time at the discounted fee of only $2.99, you will receive all of the following benefits:</p>
-								<ul>
-									<li>1) A one-time package of 20 Welcome Credits to thank you for your subscription. These credits can be used for any of the services we provide, depending only on your own preference.</li>
-									<li>2) 10 FREE Live Chat sessions lasting 3 minutes each to help you begin communicating with the members of your interest. This package is worth 30 whole credits, based on the fact that it is an offer of 30 total minutes of chat.</li>
-									<li>3) The ability to send unlimited Love Notes to the ladies whom you never corresponded with before.</li> 
-									<li>4) Ability to check your account history each month and purchase additional credits.</li>
-								</ul>
-								<p>The 10 FREE Live Chat sessions and the ability to send unlimited Love Notes renews every month together with your subscription.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is included in monthly membershp subscription?</span>
-							<span class="faq-content">{nothing}</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I subscribe?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I use 10 free chats with one lady?</span>
-							<span class="faq-content">
-								<p>Free chats have been created as ice-breakers for the members whom you never communicated with but would like to get to know.</p>
-								<p>They can’t be added up and used to chat with one member; moreover they are only available for the members whom you never communicated with before.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Will I be notified when 3 free minutes run out?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I purchase credits without membership subscription?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I subscribed with PayPal, how can I cancel subscription?</span>
-							<span class="faq-content">
-								<p>If you subscribed with PayPal, AmoLatina will be unable to cancel the recurring payment for you.<p>
-								<p>To cancel your automatic payment, please go to PayPal:</p>
-								<ul>
-									<li>1. Go to www.paypal.com and log in to your account.</li>
-									<li>2. Click ‘Profile’ near the top of the page.</li>
-									<li>3. Select ‘My money'.</li>
-									<li>4. In the ‘My pre-approved payments’ section, click ‘Update'.</li>
-									<li>5. Select the merchant whose agreement you want to cancel and click ‘Cancel’.</li>
-									<li>6. Click ‘Cancel Profile’ to confirm your request.</li>
-								</ul>
-								<p>When going to your "profile" be sure to double click on the tab to open the full Profile page as you may not get all the options if you just hover you mouse over it. Once the page loads you will see the section that says 'My money'.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Are 10 free chats rolled over to the next month if some are unused?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I cancel subscription?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why do I only get the option to subscribe for $9.99?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I did not receive 20 credits this month</span>
-							<span class="faq-content">
-								<p>20 Welcome Credits are a one-time package to thank you for your subscription which is only added upon initial subscription.</p>
-								<p>Each following month you will receive 30 credits’ worth of services in 10 free 3-minute chats, ability to send unlimited Love Notes, purchase additional credits and check your account balance.</p>
-							</span>
+	<div class="faq-container">
+
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Membership & balance</h2>
+			<div class="faq-subcategory-list">
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Membership</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What is included in the monthly membership subscription?</span>
+								<span class="faq-answer">
+									<p>By subscribing to membership for the first time at the discounted fee of only $2.99, you will receive all of the following benefits:</p>
+									<ul>
+										<li>1) A one-time package of 20 Welcome Credits to thank you for your subscription. These credits can be used for any of the services we provide, depending only on your own preference</li>
+										<li>2) 10 FREE Live Chat sessions lasting 3 minutes each to help you begin communicating with the members of your interest. This package is worth 30 whole credits, based on the fact that it is an offer of 30 total minutes of chat</li>
+										<li>3) The ability to send unlimited Love Notes to the ladies whom you never corresponded with before</li>
+									</ul>
+									<p>The 10 FREE Live Chat sessions and the ability to send unlimited Love Notes renews every month together with your subscription.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Can I use 10 free chats with one member?</span>
+								<span class="faq-answer">
+									<p>Free chats have been created as ice-breakers for the members whom you never communicated with but would like to get to know.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I subscribed with PayPal, how can I cancel subscription?</span>
+								<span class="faq-answer">
+									<p>If you subscribed with PayPal, AmoLatina will be unable to cancel the recurring payment for you.</p>
+									<p>To cancel your automatic payment, please go to PayPal:</p>
+									<p>Go to www.paypal.com and log in to your account.</p>
+									<p>1. Click 'Profile' near the top of the page. </p>
+									<p>2. Select 'My money'. </p>
+									<p>3. In the 'My pre-approved payments' section, click 'Update'.</p>
+									<p>4. Filter by "Active" status</p>
+									<p>5. Select the merchant whose agreement you want to cancel and click 'Cancel'.</p>
+									<p>6. Click 'Cancel Profile' to confirm your request </p>
+									<p>7. Confirm the cancelation.</p>
+									<p><img src="img/img1.png"></p><br/>
+									<p><img src="img/img2.png"></p><br/>
+									<p><img src="img/img3.png"></p><br/>
+									<p><img src="img/img4.png"></p><br/>
+									<p><img src="img/img5.png"></p><br/>
+									<p>When going to your "profile" be sure to double click on the tab to open the full Profile page as you may not get all the options if you just hover you mouse over it. Once the page loads you will see the section that says 'My money'.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I did not receive 20 credits this month</span>
+								<span class="faq-answer">
+									<p>20 Welcome Credits are a one-time package to thank you for your subscription which is only added upon initial subscription.</p>
+									<p>Each following month you will receive 30 credits worth of services in 10 free 3-minute chats, ability to send unlimited Love Notes, purchase additional credits and check your account balance.</p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Credits operations</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I check how many credits I have?</span>
-							<span class="faq-content">
-								<p>To check how many credits you have remaining in your account, please go into the Purchase credits section of My Account.</p>
-								<p><img src="img/purchase_credits.png" alt=""></p>
-								<p>Right there you will see how many credits you have available in your account.</p>
-								<p><img src="img/purchase_credits_total.png" alt=""></p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much do Credits Cost?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Do credits ever expire?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I purchased a wrong amount of credits</span>
-							<span class="faq-content">nothing<br><img src="https://sociorocketnewsen.files.wordpress.com/2014/12/ezgif-3646490184.gif?w=580&h=435"><br><img src="https://45.media.tumblr.com/10a3cd86558b54a14d8a638b037349b2/tumblr_mzkr47wV4x1qko8xvo1_500.gif"></span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I can’t see my credit balance</span>
-							<span class="faq-content">
-								<p>If in "My account" page you don't see any label by the coins icon it means that your current balance is zero.</p>
-								<p>If you are already subscribed you can alternatively  go into the Purchase credits section of My Account.</p>
-								<p>Right there you will see how many credits you have available in your account.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I purchase credits without membership subscription?</span>
-							<span class="faq-content">nothing</span>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Credits operations</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How can I check how many credits I have?</span>
+								<span class="faq-answer">
+									<p>To check how many credits you have remaining in your account, please go to the main page "My account"</p>
+									<p>On left hand side you will see how many credits you have available.</p>
+									<p><img src="img/img6.png"></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I can't see my credit balance</span>
+								<span class="faq-answer">
+									<p>To check how many credits you have remaining in your account, please go to the main page "My account"</p>
+									<p>On left hand side you will see how many credits you have available.</p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Payment questions</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">Unable to accept my payment. Why?</span>
-							<span class="faq-content">
-								<p>When your payment is not going through it may be due to one of the following reasons:</p>
-								
-								<ul>
-									<li>
-										1. You recently made a purchase but have not spent any credits since. The system will prevent you from making an additional purchase in order to prevent multiple transactions made in error.
-										<p>As an alternative, you may purchase larger credit packages which will save you from topping up so often.</p>
-									</li>
-									<li>
-										2. Your bank is blocking the transaction.
-										<p>AmoLatina is part of Anastasia International, an international company that employs a number of payment merchants worldwide.</p>
-										<p>Some banks may require additional verification from the account holder when they see an international transaction.</p>
-										<p>When a transaction is declined by a member’s bank, AmoLatina does not hold any of the funds. You may however see the declined transaction as pending and it will be released to your account depending on the internal policies of your bank.</p>
-										<p>Please contact your bank in order to authorize all further payments to AmoLatina, part of Anastasia International. You will then be able to make a purchase on our website.</p>
-									</li>
-									<li>
-										3. Additional verification is required by AmoLatina.
-										<p>We work very hard to protect our members from fraudulent activity and as a safeguard may conduct checks on payments and transactions made on our website.</p>
-										<p>Please contact our Customer Support team who will look into the details of your purchase history and provide you with an explanation.</p>
-									</li>
-								</ul>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is a payment of $9.99</span>
-							<span class="faq-content">
-								<p>The standard membership renewal rate is $9.99, and this is the amount that it will cost to renew your membership after the first month.</p>
-								<p>Upon subscribing we invite our members to review the Terms and Conditions of our monthly membership program. (link to the article)</p>
-								<p><img src="img/subscribe_get_amaz.png" alt=""></p>
-								<p>The 10 FREE Live Chat sessions and the ability to send unlimited Love Notes renews every month together with your subscription.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why I was charged  $15.99</span>
-							<span class="faq-content">
-								<p>$15.99 is the cost of 20 credits on AmoLatina.</p>
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Payment questions</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
 
-								<p>Upon subscribing we invite our members to review the Terms and Conditions of our monthly membership program. (link to the article) Automatic top-up of 20 credits is initially set up on your account when you subscribe.</p>
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Unable to accept my payment. Why?</span>
+								<span class="faq-answer">
+									<p>When your payment is not going through it may be due to one of the following reasons:</p>
+									<ul>
+										<li>
+											<p>1. Your bank is blocking the transaction. 
+											AmoLatina is an international company that employs a number of payment merchants worldwide.</p>
+											<p>Some banks may require additional verification from the account holder when they see an international transaction.</p>
+											<p>When a transaction is declined by a member's bank,  AmoLatina does not hold any of the funds. You may however see the declined transaction as pending and it will be released to your account depending on the internal policies of your bank.</p>
+											<p>Please contact your bank in order to authorize all further payments to AmoLatina. You will then be able to make a purchase on our website.</p>
+										</li>
+										<li>
+											<p>2. You recently made a purchase but have not spent any credits since. The system will prevent you from making an additional purchase in order to prevent multiple transactions made in error.</p>
+											<p>Once you are able to make purchases, as an alternative, you may purchase larger credit packages which will save you from topping up so often.</p>
+										</li>
+										<li>
+											<p>3. Additional verification is required by AmoLatina.</p>
+											<p>We work very hard to protect our members from fraudulent activity and as a safeguard may conduct checks on payments and transactions made on our website.</p> 
+											<p>Please contact our Customer Support team who will look into the details of your purchase history and provide you with an explanation.</p>
+										</li>
+										<li>
+											<p>4. If you are having issues with PayPal they are usually caused by an authorization issue from PayPal side. If you receive the following error code, please, contact PayPal Customer Service to receive assistance.</p>
+										</li>
+									</ul><br/>
+									<p><img src="img/img7.png"></p>
+								</span>
+							</div>
 
-								<p>Automatic Purchasing is our option that allows you to stay in touch with the lady, even when your credits run out in the middle of Live Chat or Camshare. It automatically purchases additional credits, required to continue the communication, so that your romantic conversation won't suddenly be cut off because you lack a few credits.</p>
-								<p><img src="img/subscribe_get_amaz.png" alt=""></p>
-								<p>However, you have always have the option to disable it by unchecking the box "Allow Automatic Purchasing" in the "My settings and Password" menu and then by pressing the "Save" button.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I pay using Western Union or via direct bank transfer?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I was charged too much</span>
-							<span class="faq-content">nothing</span>
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What is a payment of $9.99</span>
+								<span class="faq-answer">
+									<p>The standard membership renewal rate is $9.99, and this is the amount that it will cost to renew your membership after the first month.</p>
+									<p>Upon subscribing we invite our members to review the <a href="http://www.amolatina.com/terms-and-conditions.html">Terms and Conditions</a> of our monthly membership program.</p><br/>
+									<p><img src="img/img8.png"></p><br/>
+									<p>The 10 FREE Live Chat sessions and the ability to send unlimited Love Notes renews every month together with your subscription.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Why I was charged  $15.99?</span>
+								<span class="faq-answer">
+									<p>$15.99 is the cost of 20 credits on AmoLatina.</p>
+									<p>Upon subscribing we invite our members to review the <a href="http://www.amolatina.com/terms-and-conditions.html">Terms and Conditions</a> of our monthly membership program. Automatic top-up of 20 credits is initially set up on your account when you subscribe.</p>
+									<p>Automatic Purchasing is our option that allows you to stay in touch with the member of your preference, even when your credits run out in the middle of Live Chat or Camshare. It automatically purchases additional credits, required to continue the communication, so that your romantic conversation won't suddenly be cut off because you lack a few credits.</p><br/>
+									<p><img src="img/img9.png"></p><br/>
+									<p>However, you always have the option to disable it by unchecking the box "Allow Automatic Purchasing" in the "My settings and Password" menu and then by pressing the "Save" button.</p>
+									<p><img src="img/img10.png"></p><br/>
+									<p><img src="img/img11.png"></p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>Services</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Call Me</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I place a Call? </span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Do you have a Phone Service Guide?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I want to call the lady on her Birthday and receive 5 bonus minutes, how can I do this?</span>
-							<span class="faq-content">
-								<p>Five days before your lady's birthday you will receive a notification to your inbox. In order to get the 5 bonus minutes you need to click on the "receive 5 bonus minutes" link. Note that this offer will expire 7 days after her birthday. After selecting the bonus the minutes will be added automatically once you complete the reservation form.</p>
-								<p><img src="img/birthday_on_feb9.png" alt=""></p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">The lady suggested a new time but it does not suit me</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I can’t book a call </span>
-							<span class="faq-content">
-								<p>To place a Reservation Phone Call please go to the Call Me part of the Services section.</p>
-								<p><img src="img/services_callme.png" alt=""></p>
-								<p>You need to select your time zone, the date and time you wish to speak with your lady.</p>
-
-								<p>Please check that your local time and your time zone are set correctly before confirming your phone call.</p>
-								<p><img src="img/phone_reser.png" alt=""></p>
-								<p><img src="img/base_price.png" alt=""></p>
-								<p>It is also very important that you have the correct contact number indicated in the corresponding fields.</p>
-
-								<p>Kindly check the country code (for example, 1 for the USA, 44 for the UK etc.), your area code (3 digits only in this field) and your telephone number.  You may also indicate an additional number we will be able to connect you on in the event that the primary phone number is unreachable.</p>
-
-								<p>Please ensure that you have at least 100 credits in your account as otherwise you will not be able to place the reservation (with the exception of a repeat call to the lady that is charged 70 credits).</p>
-
-								<p>The lady’s time will be set automatically depending on her location and you will be able to review it and set the most convenient time to suit you both.</p>
-
-								<p>The system will notify you that 100 credits will be deducted from your account for the first 10 minutes. Please note that each additional minute costs 10 credits, therefore if you wish to speak with your lady for longer than 10 minutes, it is always a good idea to top-up before the call takes place.</p>
-
-								<p>The lady will now receive a notification and will have the option to accept the time you suggested or offer a new one.</p>
-
-								<p>You will be notified in both cases- if the lady accepts your time or proposes a new one. If she proposes a new one, you can only accept it or cancel the call and place a new reservation.</p>
-
-								<p>You will receive a call at the appointed time; the system will automatically connect you with your lady and the interpreter.</p>
-
-								<p>If there is an issue and either one of the parties is unable to accept the call and call back within 15 minutes, the deposit will be refunded to your account. Please check your Purchase Credits section, tab History for confirmation.</p>
-
-								<p>If you do not see the call in the list as the status Lady proposed a new time or Awaiting appointed time, something went not as expected and you will need to place the reservation again.</p>
-
-								<p>This happens when a lady suggests a different time and you do not accept it in time before a call is due to take place or if the time was set incorrectly and you did not pick it up when the phone rang.</p>
-
-								<p>You will be able to click on Archived Phone Calls and see the status of the call. We will be happy to look into it for you to find out exactly what went wrong. Please contact our Customer Support team with your ID and we will be happy to assist you.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can the lady call me?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why did my call cost 70 credits?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">My lady does not need an interpreter</span>
-							<span class="faq-content">nothing</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>CamShare</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Camshare?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much does CamShare cost?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I start CamShare</span>
-							<span class="faq-content">
-								<p>If the Lady is online and the quality of her internet connection allows to use our premium Camshare service, you will see the option in the lady’s profile.</p>
-
-								<p>Simply click on the blue Camshare icon (as below) and await your lady’s response.  Billing will start as soon as your Lady sends you a reply. Her video will be started automatically.</p>
-								<p><img src="img/camshare1.png" alt=""></p>
-								<p>You will also be able to accept an invitation from the la, please note however that the ladies do not have the option to invite you to Camshare.</p>
-
-								<p>If the Lady is online and the quality of her internet connection allows to use our premium Camshare service, the invitation will be sent automatically to you by the system.</p>
-								<p><img src="img/camshare2.png" alt=""></p>
-								<p>Billing will start automatically, as soon as you accept the lady’s invitation.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Free CamShare</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I start a Free CamShare session?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why can't the lady see me?</span>
-							<span class="faq-content">
-								<p>One possible reason for the lack of signal from your camera is that there is another program already using your webcam while you are trying to use Camshare. Please try closing down all other programs apart from your browser and see if that helps.</p>
-
-								<p>Please be aware that our Camshare service requires a high-speed internet connection on both yours and the lady's end in order for you to see her large, HD video feed. If the lady does not have a good internet connection, she may not be able to see your video.</p>
-
-								<p>Please also check that you have the latest version of Adobe Flash Player as this is required for all our video-related services.</p>
-
-								<p>As well as the aforementioned software requirements, please ensure you camera is powered on and that you have enabled your video feed by clicking on the camera button at the bottom of the chat window. If you do not see this 'allow' button then please change your screen resolution to a number higher than 900.</p>
-
-								<p>Please make sure your camera is not being used by any other program, such as Skype as there is a flash feature that prevents multiple applications from accessing your webcam simultaneously. Please completely shut down any other applications that employ your webcam before attempting your next Camshare.</p>
- 
- 								<p>It is also important to make a distinction between Live Chat with video and Camshare. All  your current sessions in Live Chat have to be shut down before starting a Camshare, these are two different services and cannot run side by side.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I switch the mode from CamShare to Live Chat?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can the lady invite me to CamShare</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Mobile Camshare</span>
-							<span class="faq-content">nothing</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Correspondance</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">I can't find  a letter</span>
-							<span class="faq-content">
-								<p>If you received too many messages to your inbox since the lady wrote to you, you will be able to find the letter by doing one of the following:</p>
-
-								<ul>
-									<li>1) Finding a message to the lady in your outbox, then clicking All Letters.</li>
-									<li>2) Please click on All letters on Any Lady in your inbox.</li>
-								</ul>
-
-								<p>In the address bar please replace the ID of the Lady whose letters have appeared in the window with the ID of the Lady whose letters you would like to read.</p>
-								<p><img src="img/img13.png" alt=""></p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I saw a message in my outbox that I did not send</span>
-							<span class="faq-content">
-								<p>This Hello note is sent to the lady when you add her to your Contact list.</p>
-								<p><img src="img/img14.png" alt=""></p>
-								<p>This was the lady will know that you viewed her profile and saved it to your list of selected contacts, will have a chance to visit your profile in return to see if you could be a potential match.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I opened a letter by mistake</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I deleted a letter by mistake</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I sent a blank letter</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I sent an unfinished letter</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Do I get charged for reading the same letter twice?</span>
-							<span class="faq-content">
-								<p>Once you have opened a letter and paid for it, you will not be charged again for reading it.</p>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Live Chat</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Live Chat?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much does Live Chat cost?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I have more than one Live Chat at a time?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What do I need to play games on Live Chat?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much does it cost to play games in Live Chat?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I play and chat at the same time?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Are 10 free chats rolled over to the next month if some are unused?</span>
-							<span class="faq-content">
-								<p>If you do not use some of the free chats in the month of your current subscription, they will expire when the next package of 10 free chats is added. 
-								<p>If you need to check how many free chats you have left, please contact our Customer Support Team who will be happy to answer your question.
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why is the text blocked in Live Chat or letters?</span>
-							<span class="faq-content">
-								<p>The censoring system in AmoLatina Live Chat is set up to prevent exchange of personal information. Various "stop" words, some words starting with a capital letter, numbers and characters (such as @) will be replaced by dots, as well as addresses, surnames and so on.</p>
-								<p>This is done for our members' and ladies' personal safety as we can never guarantee that this information will be safe once you exchange it across the open Internet.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">A lady’s video does not load</span>
-							<span class="faq-content">!!!nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I was overcharged for the chat with video</span>
-							<span class="faq-content">
-								<p>Remember that one minute of Live Chat costs <b>1 credit.</b></p>
-								<p>One minute of Live Chat with Video costs <b>2 credits.</b></p>
-								<p><img src="img/img15.png" alt=""></p>
-								<p>Please note that the ladies do not have the option to switch off their cameras.</p>
-								<p>To stop streaming please Click Stop Live Video, as below.</p>
-								<p><img src="img/img16.png" alt=""></p>
-								<p>Note, that if you used CamShare you will be charged 6 credits per minute.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What information can be exchanged via the Live Chat service?</span>
-							<span class="faq-content">
-								<p>The censoring system in Amolatina Live Chat is set up to prevent exchange of personal information. Various "stop" words, some words starting with a capital letter, numbers and characters (such as @) will be replaced by dots, as well as addresses, surnames and so on.</p>
-								<p>This is done for our members' and ladies' personal safety as we can never guarantee that this information will be safe once you exchange it across the open Internet.</p>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Photo</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">I am having problems uploading photos</span>
-							<span class="faq-content">
-								<p>Each photo you upload should be in .jpeg or .jpg format and less than 500KB in size. If a photo is in a different format or too large you may not be able to upload it.</p>
-								<p>We recommend using either Microsoft Image Editor or Microsoft Paint in order to reduce the size of the original image if that is necessary.</p>
-								<p>If you are using an Apple Mac, you may also experience difficulties uploading a photo.</p>
-								<p>If you are unable to upload a photo to your profile, please send it to support@amolatina.com  along with your Amolatina ID number. We will be happy to upload the photos to your profile on your behalf.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What are private photos?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much does it cost to view private photos?</span>
-							<span class="faq-content">
-								<p>Enjoying the Private Photos of the member of your interest is completely free of charge, provided that you have exchanged Letters, had Live Chat or carried out a Camshare session with that member. Introduce yourself today by sending a Letter or by sharing time on Camshare or Live Chat. Thereafter, please browse the Private Photos for free.</p>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Gifts</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I send my personal contact information with my Virtual Gift message?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">A lady is asking for a gift…</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do Virtual Gifts work?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">A member sent me a Virtual Gift. Does this mean they sent me an e-mail?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">If a member sends me a Virtual Gift, does it stay on my profile for 7 days, like it stays on theirs?</span>
-							<span class="faq-content">
-								<p>Yes, the Virtual Gift stays on your profile for 7 days, and you can view it as often as you like.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How many flowers should I send?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>LoveNotes</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Love Note?</span>
-							<span class="faq-content">
-								<p>A Love Note is an easy way to start communication with one of the members that has caught your interest. It is absolutely free for our subscribed members– simply go to the member’s profile, find the “Love Note” icon, choose one of the cards we offer and click “Send for Free” before opting for any other feature on offer.</p>
-								<p><img src="img/img17.png" alt=""></p>
-								<p><img src="img/img18.png" alt=""></p>
-							</span>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
-	</div>
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Services</h2>
+			<div class="faq-subcategory-list">
 
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>Bonuses & Discount</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Bonuses & Discount</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">I have bonus minutes. How can I use them?</span>
-							<span class="faq-content">
-								<p>If you get some bonus minutes for a member’s birthday you can activate them by clicking the appropiate link in the notification in your inbox. These bonus minutes will be automatically added to your account. As soon as the standart 10 minutes of a reservation.</p>
-								<p><img src="img/img19.png" alt=""></p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Free CamShare</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I purchased 1000 credits but did not get bonus minutes</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I received a 10% discount for my next order but can’t see it</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I apply 10% discount to my next order?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I use my bonus points for chat?</span>
-							<span class="faq-content">nothing</span>
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Call Me</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I want to call a member on her Birthday and receive 5 bonus minutes, how can I do this?</span>
+								<span class="faq-answer">
+									<p>Five days before your preferred member's birthday you will receive a notification in your inbox. In order to get the 5 bonus minutes you need to click on the "receive 5 bonus minutes" link. Note that this offer will expire 7 days after her birthday. After selecting the bonus the minutes will be added automatically once you complete the reservation form.</p>
+									<p><img src="img/img12.png"></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I can't book a call</span>
+								<span class="faq-answer">
+									<p>To place a Reservation Phone Call please go to the <a href="http://www.amolatina.com/callme.html">Call Me</a> part of the Services section.</p><br/>
+									<p><img src="img/img13.png"></p><br/>
+									<p>You need to select your time zone, the date and time you wish to speak with your preferred member.</p>
+									<p>Please check that your local time and your time zone are set correctly before confirming your phone call.</p><br/>
+									<p><img src="img/img14.png"></p><br/>
+									<p><img src="img/img15.png"></p><br/>
+									<p>It is also very important that you have the correct contact number indicated in the corresponding fields.</p>
+									Kindly check the country code (for example, 1 for the USA, 44 for the UK etc.), your area code (3 digits only in this field) and your telephone number.  You may also indicate an additional number we will be able to connect you on in the event that the primary phone number is unreachable.</p>
+									<p>Please ensure that you have at least 100 credits in your account as otherwise you will not be able to place the reservation (with the exception of a repeat call to the member of your preference that is charged 70 credits).</p>
+									<p>The member's time will be set automatically depending on her location and you will be able to review it and set the most convenient time to suit you both.</p>
+									<p>The system will notify you that 100 credits will be deducted from your account for the first 10 minutes. Please note that each additional minute costs 10 credits, therefore if you wish to speak with your preferred member for longer than 10 minutes, it is always a good idea to top-up before the call takes place.</p>
+									<p>The member receives a notification and will have the option to accept the time you suggested or offer a new one.</p>
+									<p>You will be notified in both cases- if the member accepts your time or proposes a new one. If she proposes a new one, you can only accept it or cancel the call and place a new reservation. Note, that the notifications will be send to the email you indicated in your profile.</p>
+									<p>You will receive a call at the appointed time; the system will automatically connect you with your preferred member and the interpreter.</p>
+									<p>If you don't see your call in the active list of the <a href="http://www.amolatina.com/callme.html">Call Me section</a> it means that it changed the status. You will be able to click on Archived Phone Calls and see the status of the call. We will be happy to look into it for you to find out exactly what changed or went wrong. Please contact our Customer Support team with your ID and we will be happy to assist you.</p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>CamShare</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How do I start CamShare?</span>
+								<span class="faq-answer">
+									<p>If the member is online with her camera on and the quality of her internet connection allows using our premium Camshare service, you will see the option in the member's profile.</p>
+									<p>Simply click on the blue Camshare icon (as below) and await your member's response. Billing will start as soon as your member sends you a reply. Her video will be started automatically.</p><br/>
+									<p><img src="img/img16.png"></p><br/>
+									<p>You will also be able to accept an invitation from the member.</p><br/>
+									<p><img src="img/img17.png"></p><br/>
+									<p>Billing will start automatically, as soon as you accept the member's invitation.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Why can't the lady see me?</span>
+								<span class="faq-answer">
+									<p>One possible reason for the lack of signal from your camera is that there is another program already using your webcam while you are trying to use Camshare. Please try closing down all other programs apart from your browser and that should help.</p>
+									<p>Please, be aware that our Camshare service requires a high-speed internet connection on both yours and the member's end in order for you to see her large, HD video feed. If the member does not have a stable internet connection, she may not be able to see your video. We recommend trying later when the connection will be more stable.</p>
+									<p>Please also check that you have the latest version of <a href="https://www.adobe.com/support/flashplayer/debug_downloads.html">Adobe Flash Player</a> as this is required for all our video-related services.</p>
+									<p>Please make sure your camera is not being used by any other program, such as Skype as there is a flash feature that prevents multiple applications from accessing your webcam simultaneously. Please completely shut down any other applications that employ your webcam before attempting your next Camshare.</p>
+									<p>As well as the aforementioned software requirements, please ensure you camera is powered on and that you have enabled your video feed by clicking on the camera button at the bottom of the chat window. If you do not see this 'allow' button then, please, change your screen resolution to a number higher than 900. Find instructions <a href="http://www.wikihow.com/Change-the-Screen-Resolution-on-a-PC">here</a></p>
+									<p>It is also important to make a distinction between Live Chat with video and Camshare. All your current sessions in Live Chat have to be shut down before starting a Camshare, these are two different services and cannot run side by side.</p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Correspondance</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I can't find a letter</span>
+								<span class="faq-answer">
+									<p>If you are looking for a specific message from a particular member you can find it by doing one of the following:</p>
+									<ul>
+										<li>
+											<p>1) Please click on the <b>All letters</b> link on any message of your Member in your inbox.</p><br/>
+											<p><img src="img/img18.png"></p><br/>
+										</li>
+										<li>
+											<p>2) You can also find a message if  you go to your sent mail box, locate any message you sent to your member and click on <b>All letters</b>.</p><br/>
+											<p><img src="img/img19.png"></p><br/>
+										</li>
+										<li>
+											<p>3) If you are not able to locate messages from your member in the inbox or sent mail box, then you still have a third option. Click on the <b>All letters</b> link of any member. Using the address of your browser, please, replace the ID of the Member whose letters have appeared in the window with the ID of the Member whose letters you would like to read.</p><br/>
+											<p><img src="img/img20.png"></p>
+										</li>
+									</ul>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I saw a message in my outbox that I did not send.</span>
+								<span class="faq-answer">
+									<p>This Hello note is sent to the member when you add her to your Contact list.</p><br/>
+									<p><img src="img/img21.png"></p><br/>
+									<p>This way the member will know that you viewed her profile and saved it to your list of selected contacts. She will have a chance to visit your profile in return to see if you could be a potential match.</p>
+									<p>This message is totally free of charge.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Do I get charged for reading the same letter twice?</span>
+								<span class="faq-answer">
+									<p>Once you have opened a letter and paid for it, you will not be charged again for reading it.</p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>LiveChat</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Are 10 free chats rolled over to the next month if some are unused?</span>
+								<span class="faq-answer">
+									<p>If you do not use some of the free chats in the month of your current subscription, they will expire when the next package of 10 free chats is added.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Why is the text blocked in Live Chat or letters? </span>
+								<span class="faq-answer">
+									<p>Why is the text blocked in Live Chat or letters?</p>
+									<p>According to the AmoLatina company policy and as required by IMBRA, the exchange of personal contact information such as e-mail addresses, telephone numbers and postal addresses is not allowed using our online services. Attempts to exchange such delicate information may get censored. This is only done for our members' own privacy and security.</p>
+									<p>In order to make such an exchange possible, we have created our specialized offline services. All members are able to exchange personal contact information safely and consensually between them in a live Phone Call that you can reserve using our <a href="http://www.amolatina.com/callme.html">Call Me service.</a> Over many years, this method has proven to be most effective and is highly recommended.</p>
+									<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the member of your choice, we will ask you to complete, sign and send us a <a href="BackgroundFormAMO.doc">Background form.</a></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">A lady's video does not load</span>
+								<span class="faq-answer">
+									<p>The videos on AmoLatina are high quality and so it takes time for them to load. If you have a slow Internet connection speed it will obviously take longer for the video to open. The video will not correctly play until it has fully downloaded.</p>
+									<p>If you are having other issues with a specific video we highly recommend you to upload the last version of <a href="https://www.adobe.com/support/flashplayer/debug_downloads.html">Adobe Flash Player.</a> Alternatively you can open the video in any other browser you have in your computer.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I was overcharged for the chat with video</span>
+								<span class="faq-answer">
+									<p>Please, remember that one minute of Live Chat costs 1 credit. One minute of Live Chat with Video costs 2 credits.</p>
+									<p>Premium smileys are charged 1 credit each.</p>
+									<p><img src="img/img22.png"></p><br/>
+									<p>To stop streaming please <b>Click Stop Live Video</b>, as below.</p>
+									<p><img src="img/img23.png"></p><br/>
+									<p>Note, that if you are using CamShare you will be charged 6 credits per minute.</p>
+									<p>The total cost of your chat will be based on the time you chatted and the extra options you used.</p>
+									<p>For example: If you had a chat for without video for 10 minutes and send 3 premium smileys you will be charged 13 credits.</p>
+									<p>In addition, you can send and receive photos in Live Chat and Camshare, the price is 15 credit per photo.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What information can be exchanged via the Live Chat service?</span>
+								<span class="faq-answer">
+									<p>According to the AmoLatina company policy and as required by IMBRA, the exchange of personal contact information such as e-mail addresses, telephone numbers and postal addresses is not allowed using our online services. Attempts to exchange such delicate information may get censored. This is only done for our members' own privacy and security.
+									<p>In order to make such an exchange possible, we have created our specialized offline services. All members are able to exchange personal contact information safely and consensually between them in a live Phone Call that you can reserve using our Call Me service. Over many years, this method has proven to be most effective and is highly recommended.
+									<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the member of your choice, we will ask you to complete, sign and send us a <a href="BackgroundFormAMO.doc">Background form.</a>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Photo</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I am having problems uploading photos</span>
+								<span class="faq-answer">
+									<p>Each photo you upload should be in .jpeg or .jpg format and less than 500KB in size. If a photo is in a different format or too large you may not be able to upload it.</p>
+									<p>We recommend using either Microsoft Image Editor or Microsoft Paint in order to reduce the size of the original image if that is necessary.</p>
+									<p>You can find detailed instructions on the following <a href="http://www.wikihow.com/Resize-Digital-Photos">site</a></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How much does it cost to view private photos?</span>
+								<span class="faq-answer">
+									<p>Enjoying the Private Photos of the member of your interest is completely free of charge, provided that you have exchanged Letters, had Live Chat or carried out a Camshare session with that member. Introduce yourself today by sending a Letter or by sharing time on Camshare or Live Chat. Thereafter, please browse the Private Photos for free.</p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Gifts</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">If a member sends me a Virtual Gift, does it stay on my profile for 7 days, like it stays on theirs?</span>
+								<span class="faq-answer">
+									<p>Yes, the Virtual Gift stays on your profile for 7 days, and you can view it as often as you like.</p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>LoveNotes</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What is Love Note?</span>
+								<span class="faq-answer">
+									<p>A Love Note is an easy way to start communication with one of the members that has caught your interest. It is absolutely free for our subscribed members– simply go to the member's profile, find the "Love Note" icon, choose one of the cards we offer and click "Send for Free" before opting for any other feature on offer.</p><br/>
+									<p><img src="img/img24.png"></p><br/>
+									<p><img src="img/img25.png"></p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
-	</div>
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Bonuses & Discount</h2>
+			<div class="faq-subcategory-list">
 
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>Members Communication</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Communication Rules</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">Terms and Conditions</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Privacy Policy</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Anti-Scam Policy</span>
-							<span class="faq-content">
-								<p>AmoLatina Anti-Scam Policy can be found here</p>
-								<p>Safety Tips</p>
-								<ul>
-									<li>Never send any money to another member.</li>
-									<li>Exchange contact information with a member only through our “Call Me” service.</li>
-									<li>Conduct video chats with your partner once in a while.</li>
-								</ul>
-								<p>Scam and reimbursements</p>
-								<ul>
-									<li>A member who misidentifies themselves. (i.e., someone who uses another member's profile without permission to communicate with you). We will reimburse all credits incurred communicating with this member.</li>
-									<li>A member requests money or expensive gifts from you. We will reimburse all credits spent communicating with this member and ban the member permanently.</li>
-									<li>A member deliberately misrepresents some details in their profile: age, children, gender, marital status or language level. We will reimburse all credits you incurred communicating with this member and ban the member permanently.</li>
-									<li>Delivery of gifts or flowers ordered through the system does not take place. We will reimburse all credits incurred for the flower or gift delivery order.</li>
-								</ul>
-								<p>Not a scam</p>
-								<ul>
-									<li>Some mistakes occurred in the translation of a letter.</li>
-									<li>If a member doesn’t answer all questions in an email.</li>
-									<li>If on any level of your communication, the member takes the decision to stop developing your relationship.</li>
-									<li>If a member has photos of relatives, friends, ex-partners and other personal info posted on any social network.</li>
-									<li>If a member wears rings on their fingers. Wearing rings does not mean a person is married, regardless of which finger it is on.</li>
-								</ul>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Member’s Verification</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I exchange personal contact information?</span>
-							<span class="faq-content">
-								<p>According to the AmoLatina company policy and as required by IMBRA, the exchange of personal contact information such as e-mail addresses, telephone numbers and postal addresses is not allowed using our online services. Attempts to exchange such delicate information may get censored. This is only done for our members' own privacy and security.</p>
-								<p>In order to make such an exchange possible, we have created our specialized offline services. All members are able to exchange personal contact information safely and consensually between them in a live Phone Call, a note attached with a Flowers & Presents.  Over many years, these methods have proven to be most effective and are highly recommended.</p>
-								<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the lady of your choice, we will ask you to complete and sign a Background form.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">A member is asking for money…</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Can I send my personal contact information with my Virtual Gift message?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why is the text blocked in Live Chat or letters?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I report fraud?</span>
-							<span class="faq-content">
-								<p>If you feel that a Lady you have been in communication with is dishonest, we would strongly recommend you to file a complaint. You can do this online by clicking on the following link.</p>
-								<p>We uphold a very strict Anti-Scam policy. (ADD the link) Any lady on the site found to be in breach of any of the terms of the policy will promptly be removed from the site.</p>
-								<p>Please provide us with as much information as possible to support your claim; we will do our best to resolve the situation as quickly and completely as possible. We take complaints of this nature very seriously, and we would like to do everything we can to help you out.</p>
-							</span>
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Bonuses & Discount</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Do you have any bonus program?</span>
+								<span class="faq-answer">
+									<p>On Amolatina we love to keep our client satisfied. If you are a loyal member you will receive complimentary credits in your birthday.</p>
+									<p>On Amolatina we love to keep our client satisfied. If you are a loyal member you will receive complimentary credits in your birthday.</p>
+									<p>In addition you can receive 3 bonus credits up to three times before you need to purchase additional credits.  You'll be eligible for the free credits multiple times in between topping up your account. For more details, please, check our <a href="http://www.amolatina.com/news/637.html">news section</a></p>
+									<p>If you get some bonus minutes for a member's birthday you can activate them by clicking the appropiate link on the notification in your inbox. These bonus minutes will be automatically added to your account. As soon as the standard 10 minutes of a phone reservation are used. We also offer 20% discount on <a href="http://www.amolatina.com/login/pages/orders/flowerdelivery/deliveryorders.aspx">Flowers and Presents</a> orders</p>
+									<p><img src="img/img12.png"></p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
+
 			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Members interaction</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">A Lady is refusing to provide contact information</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I know the members on AmoLatina are real people and how does AmoLatina vouch for them?</span>
-							<span class="faq-content">
-								<p>AmoLatina employs a dedicated verification team that works hard to provide confirmed and updated information on each member, and regularly verifies their identities in order to avoid outdated information or any possible fraud.</p>
-								<p>The AmoLatina verification team checks each member’s correspondence and immediately addresses any question of incorrect use of the AmoLatina mailing system. AmoLatina also incorporates an Anti-Scam Policy, a policy which leads the fight against scammers and online fraud.</p>
-								<p>The sincerity and honesty of the members is also ascertained by selective letter screening and regular personal interviews with each member.</p>
-								<p>The members of AmoLatina are not paid for participating in communication on AmoLatina.com. Our website is open to all members free of charge.</p>
-								<p>If you are not sure about a particular individual, we would be happy to verify their status for you personally if you simply send their AmoLatina ID number to our Customer Support team.</p>
-								<p>If you care to speak with a particular member yourself, call them now and obtain their private contact information using our Call Me service or send them a gift using Flowers & Presents attaching your own contact information.</p>
-								<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the lady of your choice, we will ask you to complete and sign a Background Form (link to IMBRA).</p>
-								<p>If you want to obtain the contact information of the member of your interest, please feel free to contact us and we will guide and assist you.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I can’t reach the lady after exchanging contact details</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I am contacted by ladies I am not interested in</span>
-							<span class="faq-content">nothing</span>
+		</div>
+
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Members Communication</h2>
+			<div class="faq-subcategory-list">
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Communication Rules</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">Anti-Scam Policy</span>
+								<span class="faq-answer">
+									<p>The AmoLatina Anti-Scam Policy can be found <a href="http://www.amolatina.com/latin-anti-scam-policy.html">here</a></p>
+
+									<p><b>Safety Tips</b></p>
+									<ul>
+										<li>- Never send any money to another member.</li>
+										<li>- Exchange contact information with a member only through our "Call Me" service.</li>
+										<li>- Conduct video chats with your partner once in a while.</li>
+									</ul>
+
+									<p><b>Scam and reimbursements</b></p>
+									<ul>
+										<li>- A member misidentifies himself/herself. (i.e., someone who uses another member's profile without permission to communicate with you). We will reimburse all credits incurred communicating with this member.</li>
+										<li>- A member requests money or expensive gifts from you. We will reimburse all credits spent communicating with this member and ban the member permanently.</li>
+										<li>- A member deliberately misrepresents some details in his/her profile: age, children, gender, marital status or language level. We will reimburse all credits you incurred communicating with this member and ban the member permanently.</li>
+										<li>- Delivery of gifts or flowers ordered through the system does not take place. We will reimburse all credits incurred for the flower or gift delivery order.</li>
+									</ul>
+
+									<p><b>Not a scam</b></p>
+									<ul>
+										<li>- Some mistakes occurred in the translation of a letter.</li>
+										<li>- If a member doesn't answer all questions in an email.</li>
+										<li>- If on any level of your communication, the member takes the decision to stop developing your relationship.</li>
+										<li>- If a member has photos of relatives, friends, ex-partners and other personal info posted on any social network.</li>
+										<li>- If a member wears rings on his/her fingers. Wearing rings does not mean a person is married, regardless of which finger it is on.</li>
+									</ul>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How can I exchange personal contact information?</span>
+								<span class="faq-answer">
+									<p>According to the AmoLatina company policy and as required by IMBRA, the exchange of personal contact information such as e-mail addresses, telephone numbers and postal addresses is not allowed using our online services. Attempts to exchange such delicate information may get censored. This is only done for our members' own privacy and security.</p>
+									<p>In order to make such an exchange possible, we have created our specialized offline services. All members are able to exchange personal contact information safely and consensually between them in a live Phone Call that you can reserve using our <a href="http://www.amolatina.com/callme.html">Call Me service.</a> Over many years, this method has proven to be most effective and is highly recommended.</p>
+									<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the member of your choice, we will ask you to complete, sign and send us a <a href="BackgroundFormAMO.doc">Background form.</a></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How do I report fraud?</span>
+								<span class="faq-answer">
+									<p>If a member's behavior appears to breach our policies, review our rules and policies below to make sure the issue is something we'll investigate, and if so, report it. We would strongly recommend you to file a complaint if necessary. You can do this online by clicking on the following <a href="https://podio.com/webforms/4032510/312891">link.</a></p>
+									<p>We uphold a very strict <a href="http://www.amolatina.com/latin-anti-scam-policy.html">Anti-Scam policy.</a></p>
+									<p>Any member on the site found to be in breach of any of the terms of the policy will promptly be removed from the site.</p>
+									<p>Please provide us with as much information as possible to support your claim; we will do our best to resolve the situation as quickly and completely as possible. We take complaints of this nature very seriously, and we would like to do everything we can to help you out.</p>
+								</span>
+							</div>
+
 						</div>
 					</div>
 				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Members interaction</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How do I know the members on AnastasiaDate are real people and how does AnastasiaDate vouch for them?</span>
+								<span class="faq-answer">
+									<p>AmoLatina employs a dedicated verification team that works hard to provide confirmed and updated information on each member, and regularly verifies their identities in order to avoid outdated information or any possible fraud.</p>
+									<p>The AmoLatina verification team checks each member's correspondence and immediately addresses any question of incorrect use of the AmoLatina mailing system. AmoLatina also incorporates an Anti-Scam Policy, a policy which leads the fight against scammers and online fraud.</p>
+									<p>The sincerity and honesty of the members is also ascertained by selective letter screening and regular personal interviews with each member.</p>
+									<p>You still have several opportunities to make sure you are talking to your selected member. Camshare and Live Chat with video give you peace of mind you require if any doubt arises.</p>
+									<p>Please note if you hold a US citizenship, before you are allowed to exchange contact information with the member of your choice, we will ask you to complete, sign and send us the <a href="BackgroundFormAMO.doc">Background form.</a></p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Mobile App</h2>
+			<div class="faq-subcategory-list">
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Mobile App</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What services are available through the app?</span>
+								<span class="faq-answer">
+									<p>Through our android app you can exchange messages (Correspondence System), have Live Chats and Camshare sessions with the members of your preference.</p>
+									<p>Our IOs app at the moment offers only Live Chat services.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">What is the name of the Iphone app?</span>
+								<span class="faq-answer">
+									<p>AmoLatina has launched a special app ( LDate) that you can find <a href="https://itunes.apple.com/en/app/ldate-casual-dating-app/id1039830544?l=en&mt=8">here</a></p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">App running slow</span>
+								<span class="faq-answer">
+									<p>Please download the latest version of the <a href="https://play.google.com/store/apps/details?id=com.amolatina&hl=en">app</a></p>
+
+									<p>If you already have it, please follow these steps:</p>
+									<ul>
+										<li>1) Press your device's Menu button | select Settings (or System Settings).</li>
+										<li>2) Tap Application Manager (or Apps).</li>
+										<li>3) Tap the app icon of AmoLatina. Rezise<br/></li>
+										<li>4) Tap Clear cache.</li>
+									</ul>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- CATEGORY -->
+		<div class="faq-category">
+			<h2>Category</h2>
+			<div class="faq-subcategory-list">
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>My profile</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How many photos can I add to my profile?</span>
+								<span class="faq-answer">
+									<p>You can submit up to 4 photos to your profile- 1 thumbnail and  3 full-sized photographs that will be seen in your profile.</p>
+									<p>To submit your photo for the catalogue please click on Upload Photo link and choose the file with the photo on your computer.</p><br/>
+									<p><img src="img/img26.png"></p><br/>
+									<p>The photos can be in PNG, JPEG or GIF format and up to 10MB each.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">When I try to register, it says that my e-mail address is already taken. What should I do?</span>
+								<span class="faq-answer">
+									<p>You probably already have an account with us. Please, click Sign in and enter your email and password.</p><br/>
+									<p><img src="img/img27.png"></p><br/>
+									<p>If you don't remember your password feel free to recover it by clicking the "Forgot password" link.</p><br/>
+									<p><img src="img/img28.png"></p><br/>
+									<p>Please, enter your email and the password will be sent to your personal inbox.</p><br/>
+									<p><img src="img/img29.png"></p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- SUBCATEGORY -->
+				<div class="faq-subcategory">
+					<span class="faq-subcategory-title"><h3>Notifications</h3></span>
+					<div class="faq-questions-list">
+						<div class="faq-questions-wrapper">
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">I am not receiving notifications to my e-mail address</span>
+								<span class="faq-answer">
+									<p>Please, check your spam or junk box for notifications from AmoLatina.</p>
+									<p>Additionally, we recommend adding our email address to the Safe Senders List of your personal email.</p>
+									<p>Your email provider may be preventing notifications from our domain.</p><br/>
+									<p>Please contact our Customer Support team who will be able to confirm the information and reset the notifications system, if required.</p>
+								</span>
+							</div>
+
+							<!-- QUESTION -->
+							<div class="faq-question-block">
+								<span class="faq-question">How do I unsubscribe from notifications?</span>
+								<span class="faq-answer">
+									<p>???</p>
+								</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
 	</div>
-
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>Mobile App</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Mobile App</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I download the app? </span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What services are available through the app?</span>
-							<span class="faq-content">
-								<p>Through our android app you can exchange messages (Correspondence System), have Live Chats and Camshare sessions with the members of your preference.</p>
-								<p>Our IOs app at the moment offers only Live Chat services.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is Mobile Chat?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How does a member receive messages if they are offline?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Do all members have the Mobile Chat option?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How much does Mobile Chat cost?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is the name of the Iphone app?</span>
-							<span class="faq-content">
-								<p>AmoLatina has launched a special app ( LDate) that you can find in https://itunes.apple.com/en/app/ldate-casual-dating-app/id1039830544?l=en&mt=8</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">The app is not available in my country</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">App running slow</span>
-							<span class="faq-content">
-								<p>Please download the latest version of the app https://play.google.com/store/apps/details?id=com.amolatina&hl=en</p>
-								<p>If you already have it, please follow these steps:</p>
-								<ul>
-									<li>1) Press your device's Menu button | select Settings (or System Settings).</li>
-									<li>2) Tap Application Manager (or Apps).</li> 
-									<li>3) Tap the app icon of AmoLatina.</li>
-									<li>4) Tap Clear Data.</li>
-								</ul>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-
-	</div>
-
-	<!-- CATEGORY -->
-	<div class="faq-category">
-		<h2>My profile & Settings</h2>
-		<div class="faq-category-wrapper">
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>My profile</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I change my account information (phone number, address, e-mail)?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">What is my account ID?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Where can I find my account ID?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I change my password?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How many photos can I add to my profile?</span>
-							<span class="faq-content">
-								<p>You can submit up to 4 photos to your profile- 1 thumbnail and  3 full-sized photographs that will be seen in your profile.</p>
-								<p>To submit your photo for the catalogue please click on Upload Photo link and choose the file with the photo on your computer.</p>
-								<p><img src="img/img20.png" alt=""></p>
-								<p>The photos can be in PNG, JPEG or GIF format and up to 10MB each.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why can't the lady see me?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How can I make my profile invisible?</span>
-							<span class="faq-content">
-								<p>When your profile is invisible or has been hidden in the catalogue, no new ladies are able to send you letters.</p> 
-								<p>If you do not wish to be visible to new ladies, please contact our Customer Support Team who will be able to help you instantly.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">When I try to register, it says that my e-mail address is already taken. What should I do?</span>
-							<span class="faq-content">
-								<p>You probably already have an account with us. Please, click Sign in and enter your email and password. If you don’t remember the password</p>
-								<p><img src="img/img21.png" alt=""></p>
-								<p><img src="img/img22.png" alt=""></p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">Why am I unable to log into my account?</span>
-							<span class="faq-content">nothing</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- SECTION -->
-			<div class="faq-section">
-				<span class="faq-section-header"><h3>Notifications</h3></span>
-				<div class="faq-answer-list">
-					<div class="faq-answer-wrapper">
-						<div class="faq-answer-item">
-							<span class="faq-question">I am not receiving notifications to my e-mail address</span>
-							<span class="faq-content">
-								<p>Your email provider may be preventing notifications from our domain.</p>
-								<p>Please contact our Customer Support team who will be able to confirm the information and reset the notifications system, if required.</p>
-								<p>Additionally, we recommend adding our email address to the Safe Senders List of your personal email.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">How do I unsubscribe from notifications?</span>
-							<span class="faq-content">
-								<p>You can click on the unsubscribe link in the notifications you receive from AmoLatina.</p>
-								<p><img src="img/img23.png" alt=""></p>
-								<p>In addition, if you do not wish to receive notifications to your private email address, please contact our Customer Support team who will be glad to assist you.</p>
-							</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I unsubscribed but still receive e-mails from you</span>
-							<span class="faq-content">nothing</span>
-						</div>
-						<div class="faq-answer-item">
-							<span class="faq-question">I am getting letters from the websites I did not register for</span>
-							<span class="faq-content">nothing</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</div>
 	</body>
 </html>
