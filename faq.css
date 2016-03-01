@@ -65,6 +65,25 @@
 /** ============================================= */
 
 
+.faq-category.singles .faq-subcategory-title {
+	padding: 0;
+	height: 10px;
+}
+
+
+.faq-category.singles .faq-subcategory-title h3 {
+	display: none;
+}
+
+
+.faq-category.singles .faq-questions-list {
+	display: block;
+}
+
+
+/** ============================================= */
+
+
 .faq-subcategory-list {
 	display: none;
 	padding-top: 10px;
